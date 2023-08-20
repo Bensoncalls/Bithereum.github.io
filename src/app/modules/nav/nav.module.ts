@@ -5,11 +5,8 @@ import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
-  declarations: [
-    NavComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  declarations: [NavComponent],
+  imports: [CommonModule],
+  exports: [NavComponent]
 })
-export class NavModule { }
+export class NavModule {}
