@@ -1,0 +1,35 @@
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  width: 100%;
+  height: 10vh;
+}
+
+#nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  border: 1px solid red;
+  color: #fff;
+}
+
+#logo {
+  height: 80%;
+}
+
+#links-container{
+    display: flex;
+}
+
+#nav-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  border: 1px solid green;
+}

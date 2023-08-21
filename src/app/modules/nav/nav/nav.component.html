@@ -1,16 +1,16 @@
-<nav>
-    <div>
-        <img src="../../../../assets/images/ibercoin.png" alt="ibercoin logo">
-        <ul>
-            <li>Homepage</li>
+<nav id="nav">
+    <div id="nav-left">
+        <img id="logo" src="../../../../assets/images/ibercoin.png" alt="ibercoin logo">
+        <ul id="links-container">
+            <li><a routerLink="home">Homepage</a></li>
             <li>Market</li>
             <li>Buy Crypto</li>
             <li>Sell Crypto</li>
-            <li>Learn</li>
+            <li><a routerLink="/learn">Learn</a></li>
             <li>BTC/USDT</li>
         </ul>
     </div>
-    <div>
+    <div id="nav-right">
         <button>Waller</button>
         <div class="language-selector">
             <label for="language">Select Language:</label>
@@ -18,5 +18,5 @@
                 <option *ngFor="let language of languages" [value]="language.code">{{ language.name }}</option>
             </select>
         </div>
-
     </div>
+</nav>
