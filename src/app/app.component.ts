@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private translate: TranslateService) {
     const userLang = navigator.language.toLowerCase();
 
-    if (userLang === 'es' || userLang === 'ca') {
+    if (userLang === 'es') {
       translate.setDefaultLang(userLang);
       translate.use(userLang);
     } else {

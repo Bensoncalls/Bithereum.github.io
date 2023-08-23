@@ -8,9 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavComponent {
   languages = [
-    { code: 'en', name: 'English' },
-    { code: 'es', name: 'Español' },
-    { code: 'ca', name: 'Català' },
+    { code: 'en', name: '🇺🇸' },
+    { code: 'es', name: '🇪🇸' },
   ];
 
   selectedLanguage: string;

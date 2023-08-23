@@ -1,22 +1,24 @@
 <nav id="nav">
     <div id="nav-left">
         <img id="logo" src="../../../../assets/images/ibercoin.png" alt="ibercoin logo">
+        <h1 id="title">Ibercoin</h1>
         <ul id="links-container">
-            <li><a routerLink="home">Homepage</a></li>
-            <li>Market</li>
-            <li>Buy Crypto</li>
-            <li>Sell Crypto</li>
-            <li><a routerLink="/learn">Learn</a></li>
+            <li><a routerLink="home">{{"homepage" | translate}}</a></li>
+            <li>{{"market" | translate}}</li>
+            <li>{{"buy-crypto" | translate}}</li>
+            <li>{{"sell-crypto" | translate}}</li>
+            <li><a routerLink="/learn">{{"learn" | translate}}</a></li>
             <li>BTC/USDT</li>
         </ul>
     </div>
     <div id="nav-right">
-        <button>Waller</button>
+
         <div class="language-selector">
-            <label for="language">Select Language:</label>
-            <select id="language" [(ngModel)]="selectedLanguage" (change)="changeLanguage()">
+            <label id="lang-label" for="language">{{ 'select-language' | translate }}</label>
+            <select class="button" id="language" [(ngModel)]="selectedLanguage" (change)="changeLanguage()">
                 <option *ngFor="let language of languages" [value]="language.code">{{ language.name }}</option>
             </select>
         </div>
+        <button class="button">{{"wallet" | translate}}</button>
     </div>
 </nav>
