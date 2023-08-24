@@ -1,0 +1,81 @@
+#business{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    width: 100%;
+    min-height: 100vh;
+}
+.articles{
+    width: 50%;
+    height: 100%;
+}
+
+#text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+}
+
+#text-container > h2{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+p{
+font-size: 1.2rem;
+}
+
+#text-container > h2, #text-container > p{
+    margin-bottom: 1rem;
+}
+
+.title-verified{
+    display: flex;
+        align-items: center;
+        margin: .5rem 0;
+}
+
+.title-verified > h3{
+font-size: 1.5rem;
+margin-left: .5rem;
+}
+
+.verified{
+    height: 1.5rem;
+
+}
+
+#btn{
+    background-color: #FFBF38;
+    color: #000;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#btn:hover{
+        background-color: #cf9d2f;
+}
+
+#btn:active{
+    background-color: #000;
+    color: #FFBF38;
+}
+
+#image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#computer{
+width: 90%;
+}
+
