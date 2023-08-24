@@ -18,3 +18,17 @@
     text-decoration: none;
     color: #fff;
     }
+
+    /* Scrollbar decoration */
+
+body::-webkit-scrollbar {
+	width:7px;
+    background-color:#000;
+}
+body::-webkit-scrollbar-thumb {
+	background: #FFBF38;
+	border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb:hover {
+	background: #9c7520;
+}
