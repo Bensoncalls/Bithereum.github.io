@@ -3,7 +3,7 @@
   flex-direction: row;
   width: 100%;
   height: 100vh;
-  background-color: #111;
+  background-color: #010001;
 }
 
 .header-parts {
@@ -50,4 +50,8 @@
 #btn:active{
     background-color: #000;
     color: #FFBF38;
+}
+
+#video{
+  height: 80%;
 }
