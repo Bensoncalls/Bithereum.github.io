@@ -10,6 +10,9 @@ import { EvolutionComponent } from './evolution/evolution.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    EvolutionComponent
   ]
 })
 export class EvolutionModule { }

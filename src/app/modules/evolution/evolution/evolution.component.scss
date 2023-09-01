@@ -1,0 +1,26 @@
+#video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  #mobile-only {
+    display: none;
+  }
+
+  #desktop-only {
+    display: block;
+      width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    #mobile-only {
+      display: block;
+            width: 100%;
+    }
+
+    #desktop-only {
+      display: none;
+    }
+  }
+}
