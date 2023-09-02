@@ -16,7 +16,7 @@
         <div class="language-selector">
             <label id="lang-label" for="language">{{ 'select-language' | translate }}</label>
             <select class="button" id="language" [(ngModel)]="selectedLanguage" (change)="changeLanguage()">
-                <option *ngFor="let language of languages" [value]="language.code">{{ language.name }}</option>
+                <option class="option" *ngFor="let language of languages" [value]="language.code">{{ language.name }}</option>
             </select>
         </div>
         <button class="button">{{"wallet" | translate}}</button>

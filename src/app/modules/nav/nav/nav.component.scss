@@ -20,20 +20,20 @@
 
 #logo {
   height: 80%;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
-#title{
+#title {
   font-family: "anton", Helvetica, sans-serif;
   font-size: 1.5rem;
 }
 
-#links-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: 70%;
+#links-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 70%;
 }
 
 #nav-right {
@@ -44,16 +44,29 @@
   height: 100%;
 }
 
-#lang-label{
+#lang-label {
   margin-right: 1rem;
 }
 
-.button{
+#language {
+  appearance: none;
+  background-color: transparent;
+}
+
+.option {
+  background-color: #000;
+}
+
+.option:hover {
+  background-color: #000;
+}
+
+.button {
   background-color: #000;
   font-size: 1.2rem;
   border: 1px solid #fff;
   border-radius: 1.2rem;
-  padding: .2rem 1rem;
-  outline:none;
+  padding: 0.2rem 1rem;
+  outline: none;
   cursor: pointer;
 }
