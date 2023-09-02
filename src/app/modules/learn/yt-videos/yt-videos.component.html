@@ -1,0 +1,13 @@
+<main id="main">
+    <section class="videos" *ngFor="let video of videos">
+        <article class="titles-container">
+            <h2>{{video.title | translate}}</h2>
+            <p>{{video.description | translate}}</p>
+        </article>
+        <article class="images-container">
+            <a href={{video.link}} target="_blank">
+                <img src={{video.image}} alt="everything about cryptocurrencies">
+            </a>
+        </article>
+    </section>
+</main>

@@ -1,0 +1,45 @@
+#main {
+  background-image:linear-gradient(#00000034, #000000ec), url("../../../../assets/images/black-snake.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  .videos {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    .titles-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      padding: 0 3rem;
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+        color: #aaa;
+      }
+    }
+    .images-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 80%;
+        border-radius: 3rem;
+        transition: all 1000ms;
+      }
+      img:hover{
+        border: .5rem solid #8884;
+      }
+    }
+  }
+}
