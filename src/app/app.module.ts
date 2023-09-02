@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomeModule } from './modules/home/home.module';
 import { FooterModule } from './modules/footer/footer.module';
+import { LearnModule } from './modules/learn/learn.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
@@ -23,6 +24,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavModule,
     HttpClientModule,
     FooterModule,
+    LearnModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
