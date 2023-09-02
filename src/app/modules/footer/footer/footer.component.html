@@ -6,17 +6,19 @@
                 <h2 id="title">Ibercoin</h2>
             </article>
             <article id="info-container">
-                <h3>Let's talk! 🤙</h3>
-                <a href="tel:+34666666666">+34 666234567</a>
-                <a href="mailto:developer@daniel-espanadero.com">developer@daniel-espanadero.com</a>
-                <p>Pl. de Catalunya, 1, 08002 Barcelona</p>
+                <h3>Contact Information 🤙</h3>
+                <ul>
+                    <li><a href="tel:+34666666666">+34 666234567</a></li>
+                    <li><a href="mailto:developer@daniel-espanadero.com">developer@daniel-espanadero.com</a></li>
+                    <li>Pl. de Catalunya, 1, 08002 Barcelona</li>
+                </ul>
             </article>
         </section>
-        <section class="brand-links-sections">
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+        <section class="brand-links-sections" id="links-container">
+            <article class="links-section" *ngFor="let section of sections">
+                <h4>{{ section.title | translate }}</h4>
+                <a *ngFor="let link of section.links" href="{{ link.url }}" target="_blank">{{ link.text | translate}}</a>
+            </article>
         </section>
     </div>
     <section id="author">

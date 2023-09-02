@@ -3,13 +3,11 @@
   flex-direction: row;
   width: 100%;
   background-color: #111;
-  border: 1px solid #f00;
 }
 
 .brand-links-sections {
   display: flex;
   height: 50vh;
-  border: 1px solid #0f0;
 }
 
 #info-brand-container {
@@ -52,10 +50,37 @@
   font-size: 1.7rem;
 }
 
-#info-container > p,
-#info-container > a {
+#info-container > ul > li,
+#info-container > ul > li > a {
   color: #888;
   font-size: 1.1rem;
+  margin: .5rem 0;
+}
+
+#links-container{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.links-section{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding-left: 1rem;
+}
+
+.links-section > h4 {
+  margin: 35% 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.links-section > a {
+  margin: .4rem 0;
+}
+
+.links-section > a:hover{
+  color: #ffbf38
 }
 
 #author {
