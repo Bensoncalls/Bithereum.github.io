@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, NavigationEnd, Router } from '@angular/router';
+
 
 const routes: Routes = [
   {
@@ -16,12 +17,20 @@ const routes: Routes = [
     path: 'learn',
     loadChildren: () =>
       import('./modules/learn/learn.module').then((m) => m.LearnModule),
-  }, // Cargar el módulo de Usuarios de manera perezosa
+  },
   { path: '**', redirectTo: '/home' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
+  }
+}
